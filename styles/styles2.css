@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+@font-face {
+    font-family: "Pacifico";
+    src: url("../fonts/Pacifico.ttf");
+}
+
+@font-face {
+    font-family: "Copperplate";
+    src: url("../fonts/Copperplate\ Gothic\ Bold\ Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+@-webkit-keyframes blink {
+    0% {background: #222}
+    50% {background: lime}
+    100% {background: #222}
+}
+
+@keyframes scroll {
+    0% { height: 50% }
+    100% { height: 100%; }
+}
+
+body {
+    background-image: url('../images/cover.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+section .profile-picture {
+    width: 10%; 
+    max-width: 50px;
+    height: auto;
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section img {
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+
+section img:hover.profile-picture {
+    object-fit: cover; 
+    filter: contrast(120%);
+    filter: grayscale(100%);
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    overflow: hidden;
+}
+
+section h2 {
+    font-size: 2.125rem; 
+    font-weight: bold; 
+    margin-top: 1.25rem;
+    margin-right: auto;
+    margin-left: auto;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Pacifico", Arial, sans-serif;
+}
+
+section h3 {
+    font-size: 1rem; 
+    font-weight: bold; 
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+p {
+    color: #00dd00;
+    font-size: 1.875rem;
+    font-family: 'VT323', Courier;
+    margin-left: 5%;
+    padding: 0;
+}
+
+#ascii {
+    color: #ffffff;
+    font-size: 0.5625rem;
+    font-family: 'VT323', Courier;
+    margin-left: 15.625%;
+    font-weight: bolder;
+}
+
+#cursor {
+    background: lime;
+    line-height: 1.0625rem;
+    margin-left: 4px;
+    -webkit-animation: blink 0.8s infinite;
+    width: 0.625rem;
+    height: 1.375rem;
+}
+
+#header {
+    display: flex;
+    align-items: baseline;
+    margin-top: 0;
+}
+
+.frame {
+    animation: scroll 2s 2;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.linkedin-icon,
+.github-icon,
+.twitter-icon {
+    width: 10%;
+    max-width: 50px;
+    height: auto;
+    margin-left: 15.625%;
+    margin-right: 2.5%;
+}
+
+.icons {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
