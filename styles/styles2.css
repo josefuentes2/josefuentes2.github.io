@@ -151,3 +151,8 @@ p {
     align-items: baseline;
     justify-content: center;
 }
+
+
+#visit-count{
+    font-size:12px;
+}
