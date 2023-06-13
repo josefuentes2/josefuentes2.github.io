@@ -1,9 +1,3 @@
-$(document).ready(function () {
-  $("#title").focus();
-  $("#text").autosize();
-});
-
-
 // Obtener el elemento del contador de visitas
 var countElement = document.getElementById('count');
 
